@@ -11,5 +11,8 @@ func main() {
 
 	r.GET("/doctors/:id/actors", ctrl.GetActors)
 
+	r.GET("/doctors", ctrl.GetDoctors)
+
 	r.Run()
+
 }
