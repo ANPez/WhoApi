@@ -4,8 +4,11 @@ import (
 	"encoding/json"
 	"net/http"
 
+	"github.com/ANPez/whoapi/models"
 	"github.com/gin-gonic/gin"
 )
+
+type Episode models.Episode
 
 func GetEpisodes(c *gin.Context) {
 	var episodesList []Episode
